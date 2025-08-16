@@ -1,0 +1,76 @@
+/* for background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Container */
+section {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Label */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Input field */
+input[type="number"] {
+    padding: 10px;
+    width: 220px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    margin-top: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #28a745;
+}
+
+/* Button */
+button, input[type="submit"] {
+    margin-top: 15px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #28a745;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #218838;
+}
+
+/*  Responsive */
+@media (max-width: 480px) {
+    section {
+        padding: 20px;
+    }
+    label {
+        font-size: 16px;
+    }
+    input[type="number"],
+    button, input[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
