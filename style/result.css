@@ -1,0 +1,100 @@
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f9, #e0e0f0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container */
+.stats-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+/* Header */
+header h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Candidate cards */
+.stats-card {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Candidate name */
+.stats-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Progress bar container */
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+/* Progress fill */
+.progress {
+    background: #28a745;
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    transition: width 1s ease-in-out;
+}
+
+/* Vote count */
+.vote-count {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Total votes card */
+.stats-card.total {
+    background: #28a745;
+    color: #fff;
+}
+
+.stats-card.total h3,
+.stats-card.total .vote-count {
+    color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .stats-card {
+        padding: 15px 20px;
+    }
+    .stats-card h3 {
+        font-size: 18px;
+    }
+    .progress-bar {
+        height: 16px;
+    }
+}

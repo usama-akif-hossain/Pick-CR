@@ -1,0 +1,108 @@
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f9, #e0e0f0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container */
+.choose {
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 350px;
+    max-width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.choose:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Header */
+header h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Radio buttons with labels */
+label {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+label:hover {
+    background: #f1f1f1;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #28a745; /* modern green color for selected radio */
+}
+
+/* Submit button */
+button {
+    padding: 12px;
+    background: #28a745;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* Focus accessibility */
+input[type="radio"]:focus,
+button:focus {
+    outline: 2px solid #28a745;
+    outline-offset: 2px;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .choose {
+        padding: 20px 25px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+    label {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
